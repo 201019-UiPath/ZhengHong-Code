@@ -1,2 +1,1 @@
-# ZhengHong-Code
-Hong Zheng's temp repo
+# revature_training

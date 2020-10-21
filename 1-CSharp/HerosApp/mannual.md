@@ -11,3 +11,6 @@ dotnet sln xxx.sln add ./xxx/xxx.csproj
 
 dotnet run --project xxx
 dotnet add current.csproj reference lib.csproj
+
+
+dotnet sln HerosApp.sln add ./temp/temp.csproj

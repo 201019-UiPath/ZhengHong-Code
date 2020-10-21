@@ -12,7 +12,7 @@ def foo(node,a,b):
     if not node:
         return 0,0,0
 
-    a_found,b_found= node.val==a,node.val == b
+    a_found,b_found= node.val==a,node.val == b 
     local_val = node.val if (a_found or b_found) else 0
 
     for child in node.children:

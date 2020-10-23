@@ -1,14 +1,13 @@
 namespace HerosUI.Menus
 {
     /// <summary>
-    /// Basic menu interface
+    /// Basic menu interface 
     /// </summary>
     public interface IMenu
     {
-
         /// <summary>
-        /// Starting pint of menus
+        /// Starting point of menus :)
         /// </summary>
-         void Start(); 
+        void Start();
     }
 }

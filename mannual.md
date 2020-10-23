@@ -14,3 +14,4 @@ dotnet add current.csproj reference lib.csproj
 
 
 dotnet sln HerosApp.sln add ./temp/temp.csproj
+dotnet new xunit -o HerosTest

@@ -6,15 +6,18 @@ namespace HerosLib
     public delegate void HeroDel(); 
     public class HeroTasks : IHeroOperations, IHeroSuperPowers
     {
-        string path=@"C:\Revature\201019-Uta-UiPath\training-code\1-CSharp\SuperPowers.txt";
+        string path=@"HerosLib\SuperPowers.txt";
         public event HeroDel workDone;
         public async void DoWork(){
             Console.WriteLine("Work Started.....");
-            await Task.Run(new Action(GetPowers));
+            await Task.Run(new Action(GetPowers));// create a new thread and returns to the main thread whenever finishes the task
             Console.WriteLine("Saving humanity is my work");
             Console.WriteLine("Work finished");
-            OnWorkDone();
+            OnWorkDone();// event call to notify all subscribers
         }
+        /// <summary>
+        /// check if event is binded to the handlers
+        /// </summary>
         public void OnWorkDone(){
             if(workDone!=null){
                 workDone();// raising the event 
